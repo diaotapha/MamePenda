@@ -2,5 +2,6 @@ services:
   - type: web
     name: mamependabot
     runtime: ruby
+    plan: free
     # preDeployCommand: "bundle exec rails db:migrate" # preDeployCommand only available on paid instance types
     startCommand: "bundle exec rackup config.ru"
